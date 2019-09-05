@@ -1,0 +1,28 @@
+BASIC FOOT SIMULATOR
+---------------------------------
+
+Download all files, but the file titled "main" is the only one you need to open and run. This
+file is where you input the system parameters, call all of the other functions, and plot the data.
+
+This program allows you to input the system parameters (V, K_leg, M_leg, C_leg, M_foot, C_foot)
+and uses an fmincon search function to find the K_foot that creates perfect rest. It then uses
+this K_foot value to plot the foot's oscillatory response. It will graph the foot's:
+
+1) POSITION (Top Graph)
+Note that at time zero (instant the foot spring contacts the ground), the foot spring has zero
+compression (dashed horizontal line in the graph). Thus, the position of the foot is equal
+to the foot spring's compression. Also, the horizontal green dashed line shows the desired
+X_stop point for this system.
+
+2) VELOCITY (Middle Graph)
+Note that the velocity's peak (aka: zero acceleration point) makes contact with the zero
+velocity line (dashed horizontal line). This creates the perfect rest point.
+
+3) ACCELERATION (Bottom Graph)
+
+
+
+IMPORTANT NOTE
+This foot does not reach a max compression point (X_stop). This simulator is meant to tell you
+want X_stop and K_foot you would want by displaying the perfect rest point. This simulator
+shows continued foot compression after reaching the perfect rest point.

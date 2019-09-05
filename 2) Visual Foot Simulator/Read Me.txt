@@ -1,0 +1,20 @@
+VISUAL FOOT SIMULATOR
+-------------------------------------------------
+
+Download all files, but the file titled "main" is the only one you need to open and run. This
+file is where you input the system parameters, call all of the other functions, and plot the data.
+
+This simulator shows a visual representation of the system as it impacts the ground. First, input
+the system parameters for your legged system. If you wish to not show the visualization, comment
+out the "Animate Hopper" section. If you wish to show the data as separate plots, outside of the
+visualization, uncomment the "Show Impact Data" section.
+
+When you run the visualization, it shows the M_leg (aka: M_robot) in red and the M_foot in blue. The top
+plot shows the position of both masses. The middle plot shows the foot's velocity, allowing you to
+check for perfect rest. The bottom plot shows the Ground Reaction Force (aka: force in the foot spring)
+during the impact. The visualization is saved as an AVI video file titled "newfile"
+
+Note that this simulator does not solve for the K_foot value that provides perfect rest. For that,
+run the "Basic Foot Simulator" code to get your system's ideal K_foot value. Also note that this
+foot does not reach a maximum compression point (X_stop). It shows the oscillations as the
+foot continues to move during the impact.

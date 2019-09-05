@@ -1,0 +1,34 @@
+GUI (GRAPHIC USER INTERFACE)
+-----------------------------------------------------------
+
+Download all files, but the file titled "change_k_app_2" is the only one you need to open and run. This
+file calls all of the other functions you downloaded.
+
+This file opens a GUI that can be used to demonstrate the perfect rest concept. The top left shows the
+system model being used. The bottom left allows the user to select a desired K_foot value. When changing
+the K_foot value, its effect on the foot's oscillatory response can be seen on the right.
+
+The right shows the foot response. The top graph is the foots position (aka: height) while the bottom
+graph shows the velocity. The user can adjust the K_foot to attain perfect rest, and see how it
+creates a plateau in the foot's height graph ideal for reaching maximum compression (X_stop).
+
+The GUI also has two switches that change the system model:
+
+1) FOOT HARD STOP
+Put this in the on position and the system will have a max compression point (X_stop). If the foot is
+at the K_foot for perfect rest, the user can see how it allows a smooth transition into the max
+compression point. If the K_foot does not allow for perfect rest, the user can see the resulting
+discontinuity (aka: a rigid body collision) in both graphs.
+
+2) FOOT DAMPING
+Put this to the on position and the foot will become damped. This shows that even if the system has
+incorporates damping, as long as there is a velocity peak, the system can still attain perfect
+rest.
+
+
+IMPORTANT NOTE:
+There is a bug in the code causing it to crash if both switches are in the "On" position and the
+"Foot Damping" switch is moved to "Off." I didn't fix this because the GUI was able to show all
+the concepts I needed to convey.  Feel free to open the code and fix if you want. In the Matlab
+window, under the "Current Folder" column on the left, right click on "change_k_app_2" and select
+"open." This opens the App Designer which allows for editing.
